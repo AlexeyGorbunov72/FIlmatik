@@ -17,14 +17,54 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="85c-sj-bHK"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Рекомендации" id="0w4-U9-0mc"/>
                     <navigationItem key="navigationItem" id="ODq-d2-k4f"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i2A-mf-Eex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2557" y="300"/>
+            <point key="canvasLocation" x="3466.666666666667" y="300"/>
         </scene>
-        <!--Фильмы-->
+        <!--Present Film View Controller-->
+        <scene sceneID="f6y-hI-qeP">
+            <objects>
+                <viewController storyboardIdentifier="presentationFilm" id="8OR-0M-8hT" customClass="PresentFilmViewController" customModule="FIlmatik" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V7f-QD-v9Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mF5-vX-TsL">
+                                <rect key="frame" x="65" y="181" width="266" height="393"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tagline" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="a7G-Ph-6fg">
+                                <rect key="frame" x="28" y="595" width="366" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name of film" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKs-hT-kvg">
+                                <rect key="frame" x="28" y="79" width="366" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="osG-G4-Jtd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MiO-0p-msf"/>
+                    <connections>
+                        <outlet property="name" destination="fKs-hT-kvg" id="bHz-2W-UAI"/>
+                        <outlet property="poster" destination="mF5-vX-TsL" id="UEG-ok-ZTg"/>
+                        <outlet property="tagline" destination="a7G-Ph-6fg" id="f3a-J9-nau"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xzI-o9-8e2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4355.072463768116" y="-481.47321428571428"/>
+        </scene>
+        <!--Main View Controller-->
         <scene sceneID="uho-qC-ceu">
             <objects>
                 <viewController id="SPE-Xg-kvt" customClass="MainViewController" customModule="FIlmatik" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,46 +74,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="AZP-fp-Wyu"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Фильмы" id="17V-gd-mVD"/>
                     <navigationItem key="navigationItem" id="LyE-5W-bNo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9nU-yX-BXe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2556.521739130435" y="-457.36607142857139"/>
-        </scene>
-        <!--Рекомендации-->
-        <scene sceneID="WY1-tP-PFA">
-            <objects>
-                <navigationController id="DBe-1o-AnI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Рекомендации" image="wand.and.stars" catalog="system" id="B2N-u2-YE7"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="CsF-pf-zFg">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="9d1-KE-JPC" kind="relationship" relationship="rootViewController" id="pwt-pD-lc4"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7TI-vv-zYo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1316" y="300"/>
-        </scene>
-        <!--фильмы-->
-        <scene sceneID="5gn-dI-dSw">
-            <objects>
-                <navigationController id="NFw-dv-xhL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="фильмы" image="film" catalog="system" id="ldl-Sp-aAu"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ntN-rw-7my">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="SPE-Xg-kvt" kind="relationship" relationship="rootViewController" id="uWz-ZD-Sfo"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Gwr-g1-wXg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1316" y="-457"/>
+            <point key="canvasLocation" x="3466.666666666667" y="-457.36607142857139"/>
         </scene>
         <!--Animated Tab Bar Controller-->
         <scene sceneID="vZI-uv-Ik9">
@@ -86,17 +91,55 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="NFw-dv-xhL" kind="relationship" relationship="viewControllers" id="Yxz-fT-ErT"/>
-                        <segue destination="DBe-1o-AnI" kind="relationship" relationship="viewControllers" id="Pwe-Y9-Rfk"/>
+                        <segue destination="XPp-sC-8DZ" kind="relationship" relationship="viewControllers" id="4jL-em-ZMD"/>
+                        <segue destination="wc4-yj-W09" kind="relationship" relationship="viewControllers" id="bmx-nF-ndw"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gb6-sh-BUg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-114" y="-260"/>
         </scene>
+        <!--Фильмы-->
+        <scene sceneID="cUQ-JQ-vK8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XPp-sC-8DZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Фильмы" image="film" catalog="system" id="17V-gd-mVD"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Hsi-lG-56l">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SPE-Xg-kvt" kind="relationship" relationship="rootViewController" id="0RB-aj-wT5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Orw-18-Lk5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2556.521739130435" y="-457.36607142857139"/>
+        </scene>
+        <!--Рекомендации-->
+        <scene sceneID="kkI-EE-PUy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wc4-yj-W09" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Рекомендации" image="wand.and.stars.inverse" catalog="system" id="0w4-U9-0mc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="neQ-mf-T1c">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9d1-KE-JPC" kind="relationship" relationship="rootViewController" id="kXO-az-KJW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UjB-2y-rew" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2556.521739130435" y="300"/>
+        </scene>
     </scenes>
     <resources>
         <image name="film" catalog="system" width="128" height="93"/>
-        <image name="wand.and.stars" catalog="system" width="128" height="113"/>
+        <image name="wand.and.stars.inverse" catalog="system" width="128" height="113"/>
     </resources>
 </document>

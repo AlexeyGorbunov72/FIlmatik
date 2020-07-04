@@ -20,6 +20,7 @@
 		CA0414CF24B0209500CB87BC /* FIlmatikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0414CE24B0209500CB87BC /* FIlmatikUITests.swift */; };
 		CA0414DD24B02D6200CB87BC /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0414DC24B02D6200CB87BC /* FeedViewController.swift */; };
 		CA0414E024B02DB000CB87BC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0414DF24B02DB000CB87BC /* MainViewController.swift */; };
+		CA2707D924B100EF00B2B85D /* PresentFilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2707D824B100EF00B2B85D /* PresentFilmViewController.swift */; };
 		CA85CC1124B0376000CE72BF /* AnimatedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA85CC1024B0376000CE72BF /* AnimatedTabBarController.swift */; };
 		CA85CC1424B06FD300CE72BF /* MainViewControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA85CC1324B06FD300CE72BF /* MainViewControllerModel.swift */; };
 		CA85CC1724B07D6600CE72BF /* FilmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA85CC1624B07D6600CE72BF /* FilmCell.swift */; };
@@ -67,6 +68,7 @@
 		CA0414D024B0209500CB87BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA0414DC24B02D6200CB87BC /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		CA0414DF24B02DB000CB87BC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CA2707D824B100EF00B2B85D /* PresentFilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentFilmViewController.swift; sourceTree = "<group>"; };
 		CA85CC1024B0376000CE72BF /* AnimatedTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTabBarController.swift; sourceTree = "<group>"; };
 		CA85CC1324B06FD300CE72BF /* MainViewControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerModel.swift; sourceTree = "<group>"; };
 		CA85CC1624B07D6600CE72BF /* FilmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCell.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				CA0414DE24B02D6D00CB87BC /* ViewControllers Group */,
 				CA0414A924B0208F00CB87BC /* AppDelegate.swift */,
 				CA0414DC24B02D6200CB87BC /* FeedViewController.swift */,
+				CA2707D824B100EF00B2B85D /* PresentFilmViewController.swift */,
 				CA85CC1A24B07FAD00CE72BF /* FilmStructure.swift */,
 				CA85CC1324B06FD300CE72BF /* MainViewControllerModel.swift */,
 				CA0414DF24B02DB000CB87BC /* MainViewController.swift */,
@@ -449,6 +452,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA2707D924B100EF00B2B85D /* PresentFilmViewController.swift in Sources */,
 				CA0414AA24B0208F00CB87BC /* AppDelegate.swift in Sources */,
 				CA85CC1724B07D6600CE72BF /* FilmCell.swift in Sources */,
 				CA85CC1424B06FD300CE72BF /* MainViewControllerModel.swift in Sources */,

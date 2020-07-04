@@ -21,6 +21,7 @@ class MainViewController: UIViewController{
         
         override func viewDidLoad() {
             super.viewDidLoad()
+            self.collectionView.showsVerticalScrollIndicator = false
             for i in 0...100{
                 var name_ = ""
                 var path_ = ""
@@ -41,7 +42,7 @@ class MainViewController: UIViewController{
                     path_ = "pic4.jpg"
                 }
                 print(path_)
-                self.data += [Film(image: UIImage(imageLiteralResourceName: path_), name: name_, tagline: "", filmStuff: StuffFilm(director: "", operatorFilm: "", actors: [Actor(name: "")], rates: 4))]
+                self.data += [Film(image: UIImage(imageLiteralResourceName: path_), name: name_, tagline: "«Страх - это кандалы. Надежда - это свобода.»", filmStuff: StuffFilm(director: "", operatorFilm: "", actors: [Actor(name: "")], rates: 4))]
             }
             title = "Фильмы"
             view.addSubview(collectionView)
@@ -52,16 +53,27 @@ class MainViewController: UIViewController{
             collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40).isActive = true
             collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40).isActive = true
             collectionView.heightAnchor.constraint(equalToConstant: view.frame.height).isActive = true
+            
+           
         }
-
+    func presentFilmView(data: Film?, indexPath: IndexPath){
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "presentationFilm") as! PresentFilmViewController
+        newViewController.film_ = data
+        
+        self.navigationController?.pushViewController(newViewController, animated: true)
+        
     }
+
+}
 
     extension MainViewController: UICollectionViewDelegateFlowLayout {
         private func collectionView(collectionView: UICollectionView,
             layout collectionViewLayout: UICollectionViewLayout,
             sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize
         {
-            print("hiqwe")
+            
             return CGSize(width:400, height:1000)
         }
        
@@ -81,19 +93,17 @@ extension MainViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumLineSpacingForSectionAt section: Int) -> CGFloat{
-               return CGFloat(100)
+               return CGFloat(50)
            }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.row)
+        self.presentFilmView(data: data[indexPath.row], indexPath: indexPath)
+
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         //return data[indexPath.row].image?.size ?? CGSize(width: 300, height: 300)
         return CGSize(width: view.frame.width/(1.5), height: view.frame.height/(2))
     }
-    
-}
-extension MainViewController: UICollectionViewDelegate{
     
 }
 
