@@ -7,45 +7,45 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Рекомендации-->
         <scene sceneID="q15-Ta-VUe">
             <objects>
-                <viewController id="9d1-KE-JPC" customClass="ViewController" customModule="FIlmatik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Рекомендации" id="9d1-KE-JPC" customClass="FeedViewController" customModule="FIlmatik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XDo-Ys-flj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="85c-sj-bHK"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="0w4-U9-0mc"/>
+                    <tabBarItem key="tabBarItem" title="Рекомендации" id="0w4-U9-0mc"/>
                     <navigationItem key="navigationItem" id="ODq-d2-k4f"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i2A-mf-Eex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2557" y="300"/>
         </scene>
-        <!--Item 1-->
+        <!--Фильмы-->
         <scene sceneID="uho-qC-ceu">
             <objects>
-                <viewController id="SPE-Xg-kvt" customClass="ViewController" customModule="FIlmatik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SPE-Xg-kvt" customClass="MainViewController" customModule="FIlmatik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dv7-t1-hrh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="AZP-fp-Wyu"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="17V-gd-mVD"/>
+                    <tabBarItem key="tabBarItem" title="Фильмы" id="17V-gd-mVD"/>
                     <navigationItem key="navigationItem" id="LyE-5W-bNo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9nU-yX-BXe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2557" y="-457"/>
         </scene>
-        <!--Item-->
+        <!--Рекомендации-->
         <scene sceneID="WY1-tP-PFA">
             <objects>
                 <navigationController id="DBe-1o-AnI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="B2N-u2-YE7"/>
+                    <tabBarItem key="tabBarItem" title="Рекомендации" image="wand.and.stars" catalog="system" id="B2N-u2-YE7"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="CsF-pf-zFg">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -62,13 +62,13 @@
         <scene sceneID="5gn-dI-dSw">
             <objects>
                 <navigationController id="NFw-dv-xhL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ldl-Sp-aAu"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="film" catalog="system" id="ldl-Sp-aAu"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ntN-rw-7my">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="SPE-Xg-kvt" kind="relationship" relationship="rootViewController" id="lrC-4m-8Gt"/>
+                        <segue destination="SPE-Xg-kvt" kind="relationship" relationship="rootViewController" id="uWz-ZD-Sfo"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gwr-g1-wXg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -95,4 +95,8 @@
             <point key="canvasLocation" x="-114" y="-260"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="film" catalog="system" width="128" height="93"/>
+        <image name="wand.and.stars" catalog="system" width="128" height="113"/>
+    </resources>
 </document>

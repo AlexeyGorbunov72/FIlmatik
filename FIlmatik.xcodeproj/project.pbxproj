@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		CA0414AA24B0208F00CB87BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0414A924B0208F00CB87BC /* AppDelegate.swift */; };
 		CA0414AC24B0208F00CB87BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0414AB24B0208F00CB87BC /* SceneDelegate.swift */; };
-		CA0414AE24B0208F00CB87BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0414AD24B0208F00CB87BC /* ViewController.swift */; };
 		CA0414B124B0208F00CB87BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0414AF24B0208F00CB87BC /* Main.storyboard */; };
 		CA0414B424B0208F00CB87BC /* FIlmatik.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA0414B224B0208F00CB87BC /* FIlmatik.xcdatamodeld */; };
 		CA0414B624B0209500CB87BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA0414B524B0209500CB87BC /* Assets.xcassets */; };
 		CA0414B924B0209500CB87BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0414B724B0209500CB87BC /* LaunchScreen.storyboard */; };
 		CA0414C424B0209500CB87BC /* FIlmatikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0414C324B0209500CB87BC /* FIlmatikTests.swift */; };
 		CA0414CF24B0209500CB87BC /* FIlmatikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0414CE24B0209500CB87BC /* FIlmatikUITests.swift */; };
+		CA0414DD24B02D6200CB87BC /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0414DC24B02D6200CB87BC /* FeedViewController.swift */; };
+		CA0414E024B02DB000CB87BC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0414DF24B02DB000CB87BC /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		CA0414A624B0208F00CB87BC /* FIlmatik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FIlmatik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0414A924B0208F00CB87BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA0414AB24B0208F00CB87BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA0414AD24B0208F00CB87BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CA0414B024B0208F00CB87BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA0414B324B0208F00CB87BC /* FIlmatik.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FIlmatik.xcdatamodel; sourceTree = "<group>"; };
 		CA0414B524B0209500CB87BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		CA0414CA24B0209500CB87BC /* FIlmatikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FIlmatikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0414CE24B0209500CB87BC /* FIlmatikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIlmatikUITests.swift; sourceTree = "<group>"; };
 		CA0414D024B0209500CB87BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA0414DC24B02D6200CB87BC /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		CA0414DF24B02DB000CB87BC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +103,9 @@
 		CA0414A824B0208F00CB87BC /* FIlmatik */ = {
 			isa = PBXGroup;
 			children = (
+				CA0414DE24B02D6D00CB87BC /* ViewControllers Group */,
 				CA0414A924B0208F00CB87BC /* AppDelegate.swift */,
 				CA0414AB24B0208F00CB87BC /* SceneDelegate.swift */,
-				CA0414AD24B0208F00CB87BC /* ViewController.swift */,
 				CA0414AF24B0208F00CB87BC /* Main.storyboard */,
 				CA0414B524B0209500CB87BC /* Assets.xcassets */,
 				CA0414B724B0209500CB87BC /* LaunchScreen.storyboard */,
@@ -129,6 +131,15 @@
 				CA0414D024B0209500CB87BC /* Info.plist */,
 			);
 			path = FIlmatikUITests;
+			sourceTree = "<group>";
+		};
+		CA0414DE24B02D6D00CB87BC /* ViewControllers Group */ = {
+			isa = PBXGroup;
+			children = (
+				CA0414DC24B02D6200CB87BC /* FeedViewController.swift */,
+				CA0414DF24B02DB000CB87BC /* MainViewController.swift */,
+			);
+			path = "ViewControllers Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,10 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA0414AE24B0208F00CB87BC /* ViewController.swift in Sources */,
 				CA0414AA24B0208F00CB87BC /* AppDelegate.swift in Sources */,
 				CA0414B424B0208F00CB87BC /* FIlmatik.xcdatamodeld in Sources */,
+				CA0414DD24B02D6200CB87BC /* FeedViewController.swift in Sources */,
 				CA0414AC24B0208F00CB87BC /* SceneDelegate.swift in Sources */,
+				CA0414E024B02DB000CB87BC /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
