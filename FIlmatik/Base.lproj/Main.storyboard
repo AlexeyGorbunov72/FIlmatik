@@ -58,11 +58,11 @@
             </objects>
             <point key="canvasLocation" x="1316" y="300"/>
         </scene>
-        <!--Item-->
+        <!--фильмы-->
         <scene sceneID="5gn-dI-dSw">
             <objects>
                 <navigationController id="NFw-dv-xhL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="film" catalog="system" id="ldl-Sp-aAu"/>
+                    <tabBarItem key="tabBarItem" title="фильмы" image="film" catalog="system" id="ldl-Sp-aAu"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ntN-rw-7my">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -75,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="1316" y="-457"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Animated Tab Bar Controller-->
         <scene sceneID="vZI-uv-Ik9">
             <objects>
-                <tabBarController id="27T-mP-uoM" sceneMemberID="viewController">
+                <tabBarController id="27T-mP-uoM" customClass="AnimatedTabBarController" customModule="FIlmatik" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="gq7-d2-CmZ"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Huk-La-t2t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>

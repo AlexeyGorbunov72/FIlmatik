@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		CA0414CF24B0209500CB87BC /* FIlmatikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0414CE24B0209500CB87BC /* FIlmatikUITests.swift */; };
 		CA0414DD24B02D6200CB87BC /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0414DC24B02D6200CB87BC /* FeedViewController.swift */; };
 		CA0414E024B02DB000CB87BC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0414DF24B02DB000CB87BC /* MainViewController.swift */; };
+		CA85CC1124B0376000CE72BF /* AnimatedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA85CC1024B0376000CE72BF /* AnimatedTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		CA0414D024B0209500CB87BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA0414DC24B02D6200CB87BC /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		CA0414DF24B02DB000CB87BC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CA85CC1024B0376000CE72BF /* AnimatedTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTabBarController.swift; sourceTree = "<group>"; };
 		D6C384D1A5FECB9567FFD113 /* Pods-FIlmatik-FIlmatikUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIlmatik-FIlmatikUITests.release.xcconfig"; path = "Target Support Files/Pods-FIlmatik-FIlmatikUITests/Pods-FIlmatik-FIlmatikUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E8F5A08C4312C4E045197561 /* Pods-FIlmatikTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIlmatikTests.debug.xcconfig"; path = "Target Support Files/Pods-FIlmatikTests/Pods-FIlmatikTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,7 +107,6 @@
 				E8F5A08C4312C4E045197561 /* Pods-FIlmatikTests.debug.xcconfig */,
 				14E25D4F165B808387321DE1 /* Pods-FIlmatikTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -179,6 +180,7 @@
 			children = (
 				CA0414DC24B02D6200CB87BC /* FeedViewController.swift */,
 				CA0414DF24B02DB000CB87BC /* MainViewController.swift */,
+				CA85CC1024B0376000CE72BF /* AnimatedTabBarController.swift */,
 			);
 			path = "ViewControllers Group";
 			sourceTree = "<group>";
@@ -424,6 +426,7 @@
 			files = (
 				CA0414AA24B0208F00CB87BC /* AppDelegate.swift in Sources */,
 				CA0414B424B0208F00CB87BC /* FIlmatik.xcdatamodeld in Sources */,
+				CA85CC1124B0376000CE72BF /* AnimatedTabBarController.swift in Sources */,
 				CA0414DD24B02D6200CB87BC /* FeedViewController.swift in Sources */,
 				CA0414AC24B0208F00CB87BC /* SceneDelegate.swift in Sources */,
 				CA0414E024B02DB000CB87BC /* MainViewController.swift in Sources */,
