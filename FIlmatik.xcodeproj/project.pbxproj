@@ -21,6 +21,9 @@
 		CA0414DD24B02D6200CB87BC /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0414DC24B02D6200CB87BC /* FeedViewController.swift */; };
 		CA0414E024B02DB000CB87BC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0414DF24B02DB000CB87BC /* MainViewController.swift */; };
 		CA85CC1124B0376000CE72BF /* AnimatedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA85CC1024B0376000CE72BF /* AnimatedTabBarController.swift */; };
+		CA85CC1424B06FD300CE72BF /* MainViewControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA85CC1324B06FD300CE72BF /* MainViewControllerModel.swift */; };
+		CA85CC1724B07D6600CE72BF /* FilmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA85CC1624B07D6600CE72BF /* FilmCell.swift */; };
+		CA85CC1B24B07FAD00CE72BF /* FilmStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA85CC1A24B07FAD00CE72BF /* FilmStructure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		CA0414DC24B02D6200CB87BC /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		CA0414DF24B02DB000CB87BC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CA85CC1024B0376000CE72BF /* AnimatedTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTabBarController.swift; sourceTree = "<group>"; };
+		CA85CC1324B06FD300CE72BF /* MainViewControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerModel.swift; sourceTree = "<group>"; };
+		CA85CC1624B07D6600CE72BF /* FilmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCell.swift; sourceTree = "<group>"; };
+		CA85CC1A24B07FAD00CE72BF /* FilmStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmStructure.swift; sourceTree = "<group>"; };
 		D6C384D1A5FECB9567FFD113 /* Pods-FIlmatik-FIlmatikUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIlmatik-FIlmatikUITests.release.xcconfig"; path = "Target Support Files/Pods-FIlmatik-FIlmatikUITests/Pods-FIlmatik-FIlmatikUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E8F5A08C4312C4E045197561 /* Pods-FIlmatikTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIlmatikTests.debug.xcconfig"; path = "Target Support Files/Pods-FIlmatikTests/Pods-FIlmatikTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,8 +151,16 @@
 		CA0414A824B0208F00CB87BC /* FIlmatik */ = {
 			isa = PBXGroup;
 			children = (
+				CA85CC1E24B080FE00CE72BF /* Support Group */,
+				CA85CC1224B06F7400CE72BF /* Models Group */,
 				CA0414DE24B02D6D00CB87BC /* ViewControllers Group */,
 				CA0414A924B0208F00CB87BC /* AppDelegate.swift */,
+				CA0414DC24B02D6200CB87BC /* FeedViewController.swift */,
+				CA85CC1A24B07FAD00CE72BF /* FilmStructure.swift */,
+				CA85CC1324B06FD300CE72BF /* MainViewControllerModel.swift */,
+				CA0414DF24B02DB000CB87BC /* MainViewController.swift */,
+				CA85CC1624B07D6600CE72BF /* FilmCell.swift */,
+				CA85CC1024B0376000CE72BF /* AnimatedTabBarController.swift */,
 				CA0414AB24B0208F00CB87BC /* SceneDelegate.swift */,
 				CA0414AF24B0208F00CB87BC /* Main.storyboard */,
 				CA0414B524B0209500CB87BC /* Assets.xcassets */,
@@ -178,11 +192,22 @@
 		CA0414DE24B02D6D00CB87BC /* ViewControllers Group */ = {
 			isa = PBXGroup;
 			children = (
-				CA0414DC24B02D6200CB87BC /* FeedViewController.swift */,
-				CA0414DF24B02DB000CB87BC /* MainViewController.swift */,
-				CA85CC1024B0376000CE72BF /* AnimatedTabBarController.swift */,
 			);
 			path = "ViewControllers Group";
+			sourceTree = "<group>";
+		};
+		CA85CC1224B06F7400CE72BF /* Models Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Models Group";
+			sourceTree = "<group>";
+		};
+		CA85CC1E24B080FE00CE72BF /* Support Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Support Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,7 +450,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA0414AA24B0208F00CB87BC /* AppDelegate.swift in Sources */,
+				CA85CC1724B07D6600CE72BF /* FilmCell.swift in Sources */,
+				CA85CC1424B06FD300CE72BF /* MainViewControllerModel.swift in Sources */,
 				CA0414B424B0208F00CB87BC /* FIlmatik.xcdatamodeld in Sources */,
+				CA85CC1B24B07FAD00CE72BF /* FilmStructure.swift in Sources */,
 				CA85CC1124B0376000CE72BF /* AnimatedTabBarController.swift in Sources */,
 				CA0414DD24B02D6200CB87BC /* FeedViewController.swift in Sources */,
 				CA0414AC24B0208F00CB87BC /* SceneDelegate.swift in Sources */,
